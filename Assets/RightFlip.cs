@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LeftFlip : MonoBehaviour {
-	
+public class RightFlip : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.LeftShift)) {
-			gameObject.transform.Rotate(0,0,40);
+		if (Input.GetKeyDown (KeyCode.RightShift)) {
+			gameObject.transform.Rotate(0,0,-40);
 
 		}
-
 	}
 }
