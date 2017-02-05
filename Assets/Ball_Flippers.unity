@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 46908033}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: RightPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -534,7 +534,7 @@ Prefab:
     - target: {fileID: 233660988074615350, guid: b14731391d5d048b897ce18a3ac86e1b,
         type: 2}
       propertyPath: m_Motor.m_MotorSpeed
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 233660988074615350, guid: b14731391d5d048b897ce18a3ac86e1b,
         type: 2}
@@ -690,7 +690,7 @@ Prefab:
     - target: {fileID: 233660988074615350, guid: b14731391d5d048b897ce18a3ac86e1b,
         type: 2}
       propertyPath: m_Motor.m_MotorSpeed
-      value: -15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 233660988074615350, guid: b14731391d5d048b897ce18a3ac86e1b,
         type: 2}
@@ -855,11 +855,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4749686634847474, guid: 064c6aa4d62344816877f7898426eeab, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.96
+      value: -2.01
       objectReference: {fileID: 0}
     - target: {fileID: 4749686634847474, guid: 064c6aa4d62344816877f7898426eeab, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.97
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4749686634847474, guid: 064c6aa4d62344816877f7898426eeab, type: 2}
       propertyPath: m_LocalPosition.z
@@ -897,9 +897,30 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 0.49771175
       objectReference: {fileID: 0}
+    - target: {fileID: 58423201834343810, guid: 064c6aa4d62344816877f7898426eeab,
+        type: 2}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 064c6aa4d62344816877f7898426eeab, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1433763120 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1828523388904570, guid: 064c6aa4d62344816877f7898426eeab,
+    type: 2}
+  m_PrefabInternal: {fileID: 1401109376}
+--- !u!114 &1433763125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1433763120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70cba92b060ec4b628ea54738a0e17a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1465139515
 Prefab:
   m_ObjectHideFlags: 0
@@ -955,6 +976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1571707063}
   - component: {fileID: 1571707062}
+  - component: {fileID: 1571707064}
   m_Layer: 0
   m_Name: surroundings
   m_TagString: Untagged
@@ -1010,6 +1032,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &1571707064
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1571707061}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -3.1999998, y: 1.28}
+      - {x: -3.1999998, y: -1.2099999}
+      - {x: -3.1799998, y: -1.2306768}
+      - {x: -2.9822898, y: -1.1920309}
+      - {x: -2.9555526, y: 1.0850521}
+      - {x: -2.0808418, y: 1.0939069}
+      - {x: -2.0633469, y: 1.2702993}
+    - - {x: 2.04, y: 1.28}
+      - {x: 2.1107342, y: 1.0597951}
+      - {x: 2.9362762, y: 1.0464497}
+      - {x: 2.9482937, y: -1.2191298}
+      - {x: 3.2, y: -1.1728249}
+      - {x: 3.1999998, y: 1.28}
+    - - {x: -1.5033267, y: 1.2799999}
+      - {x: -1.5233268, y: 1.2402991}
+      - {x: -1.4968688, y: 1.0889845}
+      - {x: -0.3642758, y: 1.1083074}
+      - {x: -0.32, y: 1.23}
+      - {x: -0.35, y: 1.28}
+    - - {x: 0.2665655, y: 1.2703384}
+      - {x: 0.2577103, y: 1.1196616}
+      - {x: 0.35999998, y: 1.06}
+      - {x: 1.3822896, y: 1.0793229}
+      - {x: 1.4611447, y: 1.1499999}
+      - {x: 1.4699999, y: 1.23}
+      - {x: 1.4399999, y: 1.28}
 --- !u!1 &1808789241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,7 +1081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1808789242}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: LeftPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
