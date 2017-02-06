@@ -21,8 +21,9 @@ GameObject:
   - component: {fileID: 4728960469771732}
   - component: {fileID: 212354694346273922}
   - component: {fileID: 50207349579605998}
-  - component: {fileID: 60384154298180084}
   - component: {fileID: 233660988074615350}
+  - component: {fileID: 60674927865887004}
+  - component: {fileID: 114291097422400882}
   m_Layer: 0
   m_Name: flipperwall
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1136257470958684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.81, y: -2.155, z: 0}
+  m_LocalPosition: {x: -2.032, y: -1.703, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -63,7 +64,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &60384154298180084
+--- !u!60 &60674927865887004
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -77,30 +78,53 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: 0.45999998, y: -0.72999996}
-      - {x: 0.39, y: -0.66999996}
-      - {x: 0.08, y: -0.57}
-      - {x: -0.02, y: -0.53999996}
-      - {x: -0.28, y: -0.45999998}
-      - {x: -0.51, y: -0.39}
-      - {x: -0.57, y: -0.37}
-      - {x: -0.57, y: 1.11}
-      - {x: -0.64, y: 1.1999999}
-      - {x: -0.75, y: 1.1999999}
-      - {x: -0.82, y: 1.1}
-      - {x: -0.82, y: -0.48999998}
-      - {x: -0.78999996, y: -0.56}
-      - {x: -0.75, y: -0.59999996}
-      - {x: -0.64, y: -0.65}
-      - {x: -0.39999998, y: -0.71}
-      - {x: -0.24, y: -0.76}
-      - {x: -0.01, y: -0.83}
-      - {x: 0.25, y: -0.90999997}
-      - {x: 0.29999998, y: -0.91999996}
-      - {x: 0.37, y: -0.91999996}
-      - {x: 0.42999998, y: -0.9}
-      - {x: 0.47, y: -0.84999996}
-      - {x: 0.48, y: -0.78999996}
+    - - {x: 1, y: -1.26}
+      - {x: 0.96, y: -1.23}
+      - {x: 0.94000006, y: -1.1726257}
+      - {x: 0.8399999, y: -1.1016759}
+      - {x: 0.73094976, y: -1.0281006}
+      - {x: 0.42547488, y: -0.81357515}
+      - {x: -0.24357557, y: -0.34810054}
+      - {x: -0.34094977, y: -0.28072643}
+      - {x: -0.44810057, y: -0.0935756}
+      - {x: -0.4437058, y: 1.24}
+      - {x: -0.4537058, y: 1.2414714}
+      - {x: -0.84370565, y: 1.48406}
+      - {x: -0.93741155, y: 1.5462942}
+      - {x: -0.9351773, y: 1.5003543}
+      - {x: -0.93147135, y: 1.4762943}
+      - {x: -0.9362943, y: 1.4699999}
+      - {x: -0.9271283, y: -0.20141876}
+      - {x: -0.88425636, y: -0.2757094}
+      - {x: -0.808547, y: -0.41570938}
+      - {x: -0.7119608, y: -0.59524524}
+      - {x: -0.49, y: -0.75671566}
+      - {x: -0.26, y: -0.92098033}
+      - {x: -0.18475509, y: -0.9662255}
+      - {x: -0.1552453, y: -0.99098}
+      - {x: -0.07999992, y: -1.0362257}
+      - {x: -0.059999943, y: -1.0467156}
+      - {x: 0.01999998, y: -1.1014704}
+      - {x: 0.03999996, y: -1.1262254}
+      - {x: 0.120000005, y: -1.1809803}
+      - {x: 0.13524497, y: -1.1962253}
+      - {x: 0.44000006, y: -1.4014705}
+      - {x: 0.64, y: -1.5461222}
+      - {x: 0.690817, y: -1.5530609}
+      - {x: 0.71999997, y: -1.5}
+      - {x: 0.85999995, y: -1.29}
+      - {x: 1, y: -1.3199999}
+--- !u!114 &114291097422400882
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1136257470958684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ce5a9a8c7824014889f152b8467011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212354694346273922
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -132,7 +156,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ab3295f9f3da746fbbcca6f8a07f2b3e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8074d7934d3a488984c9ea276a2253d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -149,13 +173,13 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0.4, y: -0.8}
-  m_ConnectedAnchor: {x: 0.6400001, y: 0}
-  m_UseMotor: 0
+  m_Anchor: {x: 0.78956485, y: -1.3411807}
+  m_ConnectedAnchor: {x: -0.4023577, y: 0.03310411}
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_AngleLimits:
     m_LowerAngle: 0
-    m_UpperAngle: 356
+    m_UpperAngle: 30

@@ -20,5 +20,6 @@ public class ScoreTrigger : MonoBehaviour {
 			score++;
 		}
 		print ("score: " + score);
+
 	}
 }
