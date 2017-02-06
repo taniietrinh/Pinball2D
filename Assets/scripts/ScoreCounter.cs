@@ -14,7 +14,7 @@ public class ScoreCounter : MonoBehaviour {
 		SetCountText ();
 	}
 
-	void onTriggerEnter2D(Collider2D other) {
+	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.CompareTag("stars")) {
 			count += 5;
 			SetCountText ();
