@@ -6,12 +6,10 @@ public class LeftFlip : MonoBehaviour {
 
 	HingeJoint2D hinge;
 	JointMotor2D jointMotor;
-	//Rigidbody2D flipper;
 
 	// Use this for initialization
 	void Start () {
 		hinge = gameObject.GetComponent<HingeJoint2D> ();
-		//flipper = hinge.connectedBody;
 		jointMotor = hinge.motor;
 	}
 	
