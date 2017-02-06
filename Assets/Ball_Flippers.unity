@@ -886,30 +886,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8daee69d1ce84430bd02bcb7bcd00f9, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &798874207 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1170460187260956, guid: c8daee69d1ce84430bd02bcb7bcd00f9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1029233000}
 --- !u!4 &798874208 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4352595665594012, guid: c8daee69d1ce84430bd02bcb7bcd00f9,
     type: 2}
   m_PrefabInternal: {fileID: 1029233000}
---- !u!58 &798874209
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 798874207}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.22907913
 --- !u!1001 &807822970
 Prefab:
   m_ObjectHideFlags: 0
@@ -1137,7 +1118,7 @@ GameObject:
   - component: {fileID: 976490687}
   m_Layer: 0
   m_Name: stars
-  m_TagString: Untagged
+  m_TagString: stars
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1335,7 +1316,7 @@ GameObject:
   - component: {fileID: 1126432475}
   m_Layer: 0
   m_Name: smallerStars
-  m_TagString: Untagged
+  m_TagString: smallerStars
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1767,20 +1748,9 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1433763120}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eacb9c5208d804b4d95862fb99728766, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1433763125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1433763120}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70cba92b060ec4b628ea54738a0e17a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 222579e201c8b49f9b9b78e27aa7e1c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1723697145}
@@ -1992,7 +1962,7 @@ GameObject:
   - component: {fileID: 1723697146}
   - component: {fileID: 1723697145}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
